@@ -1,0 +1,147 @@
+body {
+  height: 100vh !important;
+
+}
+
+.container {
+  margin: 20px auto;
+  background-color: #fffbf2;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #4b37237a;
+}
+
+h2 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fcf8f3 !important;
+  border: 1px solid white !important;
+  border-radius: 20px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid white;
+}
+
+th {
+  background-color: #4b3723 !important;
+  color: white !important;
+}
+
+.add-product {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.add-product a {
+  background-color: #d2691e;
+  color: #f5f5dc;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.add-product a:hover {
+  background-color: #d2691e;
+  color: #f5f5dc;
+}
+
+.add-product button:hover {
+  background-color: white;
+  color: #4b3723;
+}
+
+.product-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  color: white;
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.actions .edit {
+  background-color: rgb(218, 159, 91) !important;
+}
+.actions .edit:hover {
+  background-color: rgb(218, 159, 91) !important;
+}
+.actions button:hover {
+  color: #4b3723;
+}
+
+.Available {
+  background-color: #4b3723;
+}
+
+.edit {
+  background-color: rgb(218, 159, 91) !important;
+  color: #f5f5dc;
+}
+.edit:hover {
+ 
+  color: rgb(218, 159, 91);
+  box-shadow: 0 4px 8px rgb(218, 159, 91);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pg-link {
+  color: #4b3723 !important;
+}
+
+.pg-link:focus {
+  box-shadow: 0 0 0 0.25rem rgba(79, 49, 49, 0.15);
+  background-color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+
+  .product-image {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .actions {
+    flex-direction: column;
+  }
+
+  .actions button {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}

@@ -1,0 +1,133 @@
+body {
+  position: relative;
+  padding-top: 90px !important;
+  padding-bottom: 90px !important;
+  background-color: #faf0e6;
+}
+
+header {
+  background-color: #4b2e23;
+  color: #f5f5dc;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-nav .nav-link {
+  color: #f5f5dc !important;
+}
+
+.navbar-nav.ml-auto {
+  margin-left: auto;
+}
+
+.navbar-nav .d-flex {
+  align-items: center;
+}
+
+.navbar-nav img {
+  vertical-align: middle;
+}
+
+.navbar-nav span {
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+.navbar-dark .navbar-brand {
+  color: #f5f5dc;
+}
+
+.btn {
+  background-color: #ab4646;
+  color: #faf0e6;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #f5f5dc;
+  color: #33211d;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav .nav-item {
+      margin: 10px 0;
+      text-align: center; /* Center nav items */
+  }
+
+  .navbar-nav .d-flex {
+      justify-content: center;
+      margin-top: 10px;
+      flex-direction: column;
+  }
+
+  /* Ensure the collapse behavior */
+  .navbar-collapse {
+      width: 100%;
+  }
+}
+
+
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
+  color: #7b3f00 !important;
+}
+
+.btn-danger {
+  background-color: #b22222;
+}
+
+a.btn-danger.btn:hover {
+  background-color: #b22222 !important;
+  color: #faf0e6 !important;
+}
+
+.btn-danger.btn:hover {
+  background-color: #b22222 !important;
+  color: #faf0e6 !important;
+}
+
+.edit:hover,
+.btn.edit:active {
+  background-color: #d2691e;
+  color: #f5f5dc;
+}
+
+.btn.edit {
+  background-color: #d2691e;
+}
+
+.btn.edit:hover {
+  background-color: #d2691e;
+}
+
+th {
+  background-color: #4b2e23 !important;
+  color: #f5f5dc !important;
+  text-align: left !important;
+  padding: 10px !important;
+  border-bottom: 2px solid #33211d !important;
+}
+
+td {
+  text-align: left !important;
+  padding: 10px !important;
+  border-bottom: 2px solid #33211d !important;
+  color: #5b3c31 !important;
+}
+
+.logout {
+  width: 30px;
+  height: 30px;
+}
+
+

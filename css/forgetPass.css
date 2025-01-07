@@ -1,0 +1,104 @@
+body {
+    background-color: #fffbf2; /* Off-white background */
+    color: #33211d; /* Dark brown text */
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-container {
+    background-color: #fffbf2; /* Off-white background */
+    color: #33211d; /* Dark brown text */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #4b2e234d;
+    text-align: center;
+    max-width: 500px;
+    height: 400px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .lock-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 10px auto;
+  }
+  
+  .lock-icon img {
+    width: 100%;
+    height: auto;
+  }
+  
+  h4 {
+    color: #33211d; /* Off-white text color */
+    margin-bottom: 60px;
+    font-size: 1.2rem;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    color: #33211d; /* Off-white text color for label */
+    margin-bottom: 8px;
+    display: block;
+    font-weight: bold;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #da9f5b; /* Gold border for input */
+    border-radius: 4px;
+    background-color: #fffbf2; /* Off-white background for input */
+    color: #33211d; /* Dark brown text */
+    font-size: 16px;
+  }
+  
+  .form-control:focus {
+    border-color: #da9f5b; /* Gold border on focus */
+    outline: none;
+    box-shadow: 0 0 5px #f5f5dc; /* Gold glow on focus */
+  }
+  
+  button.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #da9f5b; /* Gold background for button */
+    color: #33211d; /* Dark brown text */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  button.btn:hover {
+    background-color: #33211d; /* Dark brown background on hover */
+    color: #fffbf2; /* Off-white text color on hover */
+  }
+  
+  .btn.edit {
+    background-color: #d2691e;
+    color: #f5f5dc;
+  }
+  .btn.edit:hover {
+    background-color: #d2691e;
+    color: #f5f5dc;
+  }
+  

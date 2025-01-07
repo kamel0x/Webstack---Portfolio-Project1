@@ -1,0 +1,163 @@
+body {
+  font-family: Arial, sans-serif;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  background-color: white;
+ 
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fffbf2;
+  padding: 10px;
+  box-shadow: 0 4px 8px #4b3723;
+
+  border-radius: 8px;
+}
+
+.con {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  background-color: #f8f9fa;
+}
+
+main h1 {
+  font-size: 36px;
+  color: #5b3c31;
+  margin-bottom: 20px;
+  text-decoration: solid 2px;
+}
+
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.order-table th,
+.order-table td {
+  text-align: left;
+  padding: 10px;
+  margin-top: 10px;
+  border-bottom: 2px solid #4b3723;
+  color: #5b3c31;
+}
+
+.order-table th {
+  background-color: #4b2e23;
+  color: white;
+  margin-top: 10px;
+}
+
+.items-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border: 2px solid #33211d;
+  background-color: #fffbf2;
+  /* height: 400px; */
+}
+
+.item {
+  position: relative;
+  height: 280px;
+  width: 250px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.item-image {
+  position: relative;
+}
+
+.item-price {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #d4a017;
+  color: #faf0e6;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.item-info {
+  margin-top: 10px;
+}
+
+.item img {
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.total1 {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  width: 200px;
+  margin: 0px;
+  
+  font-weight: bold;
+  padding: 15px;
+
+  border-radius: 8px;
+  color: #33211d;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .filter-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .items-container {
+    gap: 20px;
+  }
+
+
+  .item {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  main h1 {
+    font-size: 28px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .con {
+    padding: 10px;
+  }
+
+  .filter-section {
+    gap: 10px;
+  }
+
+  .item {
+    width: 100px;
+  }
+
+  .item-price {
+    font-size: 12px;
+    padding: 3px 7px;
+  }
+
+  .order-table th,
+  .order-table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

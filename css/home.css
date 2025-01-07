@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+  
+  .highlight {
+    background-color: #d2691e;
+    color: #f5f5dc;
+  }
+  .highlight:hover {
+    background-color: #d2691e;
+    color: #f5f5dc;
+  }
+  
+  .product-item {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: white; /* Ensure background is set */
+    position: relative;
+  }
+  
+  .product-item:hover {
+    background-color: #fcf8f3;
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-controls button {
+    background-color: #d2691e;
+    color: #f5f5dc;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .quantity-controls span {
+    width: 30px;
+    text-align: center;
+  }
+  
+  .bill {
+    background-color: #fcf8f3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    height: fit-content;
+  }
+  
+  .search-select-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .product-item-mini {
+    display: flex;
+  }
+  .product-item-mini > div:nth-child(1) {
+    margin-inline-end: 24px;
+  }
+  .product-item > .product-image-wrapper {
+    width: 300px;
+    height: 300px;
+    max-height: 300px;
+    background-color: #efeff1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-item-mini > .product-image-wrapper {
+    width: 60px;
+    height: 60px;
+    max-height: 300px;
+    background-color: #efeff1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-item .product-image-wrapper img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 20px; /* Optional: to round the corners of the image */
+  }
+  .product-item-mini img {
+    width: 55px !important; /* Set your desired width */
+    height: 55px !important; /* Set your desired height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 20px; /* Optional: to round the corners of the image */
+  }
+  .drink-name {
+    min-width: 124px;
+    text-align: left;
+    margin: 0;
+  }
+  .drink-name {
+    display: block;
+  }
+  .drink-price {
+    text-align: left;
+    display: block;
+  }
+  .search-select-container input {
+    width: 100%;
+    min-width: 300px;
+    width: 800px;
+  }
+  
+  @media (max-width: 767.98px) {
+    .col-md-8,
+    .col-md-4 {
+      width: 100%;
+    }
+  }
+  .label {
+    font-size: 16px;
+    line-height: 12px;
+    padding: 6px 0px;
+    color: #667085;
+  }
+  .value {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #495057;
+    padding: 0px 4px;
+  }
+  button.highlight.add-product.order-new-drink {
+    position: absolute;
+    top: -8px;
+    inset-inline-end: -8px;
+    width: 32px !important;
+    height: 32px;
+    max-width: 32px !important;
+    max-height: 32px;
+    border-radius: 50%;
+    padding: 0;
+  }
+
+  .drink-price-highlight {
+    padding: 8px;
+    color: #d4a017;
+    border-radius: 12px;
+    font-weight: 900;
+    line-height: 32px;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-top: 12px;
+  }
+  .bill-item .product-name {
+    text-align: center;
+  }
+  .tooltip > .tooltip-inner {
+    background-color: #d4a017 !important;
+  }
+  
+  /* .tooltip .tooltip-arrow {
+    background-color: #d4a017 !important;
+  } */
+  
+  .bs-tooltip-top .tooltip-arrow::before,
+  .bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow::before {
+    border-top-color: #d4a017 !important;
+  }
+  

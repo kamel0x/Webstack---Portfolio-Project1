@@ -1,0 +1,143 @@
+body {
+  height: 100vh !important;
+}
+
+
+.container {
+  max-width: 960px;
+  margin: 20px auto;
+  background-color: #fffbf2;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #4b37237a;
+}
+
+h2 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.add-user {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+.add-user button {
+  background-color: #d2691e;
+  color: #f5f5dc;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.add-user button:hover {
+  color: #4b3723;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fcf8f3 !important;
+  border: 1px solid white !important;
+  border-radius: 20px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid white;
+}
+
+th {
+  background-color: #4b3723 !important;
+  color: white !important;
+}
+
+.user-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  color: white;
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.edit {
+  background-color: rgb(218, 159, 91) !important;
+  color: #f5f5dc;
+}
+.edit:hover {
+  background-color: #d2691e !important;
+  color: #f5f5dc;
+}
+
+.actions button:hover {
+  color: #4b3723;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pg-link {
+  color: #4b3723 !important;
+}
+.pg-link:hover {
+  box-shadow: 0 2px 5px #4b3723;
+  background-color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    padding: 5px;
+  }
+
+  .product-image {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .admin-section img {
+    margin-bottom: 5px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .actions button {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .delete{
+    background-color: #ab4646 !important;
+  }
+
+}
